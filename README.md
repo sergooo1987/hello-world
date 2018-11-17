@@ -17,5 +17,5 @@ select * from Emploee where salary = (select min(salary) from Emploee) or salary
 
 1.4.	на выборку максимальной заработной платы в каждом отделе;
 ```
-SELECT  d.*, e.* FROM  Department AS d LEFT JOIN Emploee AS e ON (d.id = e.department_id) WHERE e.salary = (SELECT MAX(salary)FROME mploee AS e2 WHERE e2.department_id = d.id)
+SELECT  d.*, e.* FROM  Department AS d LEFT JOIN Emploee AS e ON (d.id = e.department_id) WHERE e.salary = (SELECT MAX(salary) FROM Emploee AS e2 WHERE e2.department_id = d.id)
 ```

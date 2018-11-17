@@ -12,7 +12,7 @@ SELECT * FROM `Emploee` WHERE DATE_FORMAT(birthday, '%m-%d') = DATE_FORMAT(NOW()
 ```
 1.3.	на выборку сотрудников с минимальной и максимальной заработной платой;
 ```
-select * from Emploee where salary = (select min(salary) from Emploee) or salary = (select max(salary) from Emploee)
+SELECT * FROM Emploee WHERE salary = (select min(salary) FROM Emploee) or salary = (select max(salary) FROM Emploee)
 ```
 
 1.4.	на выборку максимальной заработной платы в каждом отделе;

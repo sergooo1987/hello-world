@@ -4,11 +4,11 @@
 
 1.1.	на выборку всех сотрудников, упорядоченных по полю name по алфавиту проживающих в городах, начинающихся с буквы А;
 ```
-SELECT * FROM `Emploee` WHERE city LIKE 'А%' ORDER BY name ASC
+SELECT * FROM Emploee WHERE city LIKE 'А%' ORDER BY name ASC
 ```
 1.2.	на выборку сотрудников, у которых в день выполнения запроса день рождения;
 ```
-SELECT * FROM `Emploee` WHERE DATE_FORMAT(birthday, '%m-%d') = DATE_FORMAT(NOW(), '%m-%d')
+SELECT * FROM Emploee WHERE DATE_FORMAT(birthday, '%m-%d') = DATE_FORMAT(NOW(), '%m-%d')
 ```
 1.3.	на выборку сотрудников с минимальной и максимальной заработной платой;
 ```
